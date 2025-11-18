@@ -1,2 +1,2 @@
 # StardewQuiz
-Site para desafiar jogadores de Stardew Valley
+Site para desafiar jogadores de Stardew Valley.
