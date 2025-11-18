@@ -1,0 +1,218 @@
+/* Página única de estilização */
+
+/* Fonte Pixelada */
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap');
+
+/* Configuração padrão*/
+body {
+    font-family: 'Pixelify Sans', sans-serif;
+    
+    /* Imagem do jogo de fundo */
+    background-image: url('../images/Stardew-Valley.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+
+    color: #4b3424;
+    margin: 0;
+    padding: 0;
+    image-rendering: pixelated;
+    min-height: 100vh; /* Fazendo com que o body tenha altura da tela */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cabeçalho */
+header {
+    background-color: rgba(26, 20, 54, 0.9);
+    color: #f7f3e8; 
+    padding: 15px 30px;
+    text-align: center;
+    border-bottom: 5px solid rgb(27, 17, 10, 0.9);
+    top: 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem; 
+}
+/* Texto do cabeçalho */
+header nav a {
+    color: #ffe7aa; 
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+header nav a:hover {
+    background-color: rgba(22, 16, 51, 0.9);
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto; /* Mantendo centralizado */
+    padding: 20px 40px;
+    
+    background-color: #fffaf0;
+    border: 5px solid rgba(139, 90, 43,0.9);
+    border-radius: 8px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    color: #f7f3e8;
+    font-size: 0.9rem;
+    background-color: rgba(26, 20, 54, 0.9);
+    border-top: 5px solid rgba(27, 17, 10, 0.9);
+}
+
+/* Estilizações dos Botões e Links Especiais */
+
+/* Iniciar Quiz e Enviar */
+.btn-start, 
+button[type="submit"] {
+    background-color: #c99a61; 
+    color: #4b3424; 
+    border: 3px solid #5a381f; 
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    font-family: 'Pixelify Sans', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block; /* Para o "a" se comportar como botão */
+    border-radius: 5px;
+
+    /* Sombra */
+    box-shadow: 3px 3px 0px #5a381f;
+    transition: all 0.1s ease;
+}
+
+/* Efeito ao apertar o botão */
+.btn-start:hover, 
+button[type="submit"]:hover {
+    background-color: #d1a66b;
+    transform: translate(1px, 1px); /* Move o botão */
+    box-shadow: 2px 2px 0px #5a381f;
+}
+
+/* Estilos Específicos do Quiz */
+
+/* Para centralização do conteúdo */
+.quiz-page,
+.feedback-page,
+.welcome-screen {
+    width: 100%;
+    text-align: center;
+}
+
+.welcome-screen img {
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.quiz-page h2,
+.feedback-page h2,
+.welcome-screen h2 {
+    font-size: 2rem;
+    color: #5a381f;
+    border-bottom: 3px solid #b3885d;
+    padding-bottom: 10px;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Para manter espaço entre as opções */
+    margin-top: 20px;
+}
+
+.option {
+    /* Caixa de cada opção de resposta */
+    border: 2px solid #b3885d;
+    background: #fdf6e7;
+    padding: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.option:hover {
+    background-color: #f7eecf; /* Destaque discreto ao passar o mouse */
+}
+
+.option label {
+    margin-left: 10px;
+    font-size: 1.1rem;
+}
+
+/* Cor da caixa ao selecionar a opção */
+.option input[type="radio"]:checked + label {
+    color: #3d5e2a;
+    font-weight: bold;
+}
+
+.quiz-results {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.quiz-results a {
+    /* Reutiliza o estilo de botão para o "Tentar Novamente" */
+    display: inline-block;
+    margin-top: 20px;
+}
+
+
+/* Formulário do Feedback */
+
+#feedback-form div {
+    margin-bottom: 15px;
+}
+
+#feedback-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+/* Estilização da caixa de texto */
+#feedback-form input[type="text"],
+#feedback-form input[type="email"],
+#feedback-form textarea {
+    width: 95%;
+    padding: 10px;
+    background-color: #fdf6e7;
+    border: 2px solid #b3885d;
+    color: #4b3424;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+/* Mensagem de erro (vermelha e clara) */
+.error-message {
+    color: #e60000;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Borda vermelha na área com erro */
+input.invalid {
+    border-color: #e60000;
+    background-color: #fff0f0;
+}

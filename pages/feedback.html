@@ -1,0 +1,26 @@
+<div class="feedback-page">
+    <h2>Forms de Feedback</h2>
+    <p>Se divertiu com nosso quiz? Tem alguma sugestão de melhoria ou encontrou algum bug?<br>Dê o seu feedback!</p>
+
+    <form id="feedback-form"> <!-- Para linkar com o JavaScript-->
+        <div>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name">
+            <span class="error-message" id="name-error"></span>
+        </div>
+        
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <span class="error-message" id="email-error"></span>
+        </div>
+        
+        <div>
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback"></textarea>
+            <span class="error-message" id="feedback-error"></span>
+        </div>
+        
+        <button type="submit">Enviar feedback</button>
+    </form>
+</div>
