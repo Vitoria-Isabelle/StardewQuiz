@@ -33,8 +33,6 @@ A elaboração deste projeto trouxe vivências práticas fundamentais para minha
 
 
 
-### 🚀 Como rodar o projeto localmente
-
 ### 🚀 Como testar o projeto no seu computador
 
 1. Baixe a pasta com os arquivos do projeto aqui no GitHub.
