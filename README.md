@@ -35,6 +35,8 @@ A elaboração deste projeto trouxe vivências práticas fundamentais para minha
 
 ### 🚀 Como rodar o projeto localmente
 
-1. Clone este repositório:
-   ```bash
-   git clone [https://github.com/Vitoria-Isabelle/StardewQuiz.git](https://github.com/Vitoria-Isabelle/StardewQuiz.git)
+### 🚀 Como testar o projeto no seu computador
+
+1. Baixe a pasta com os arquivos do projeto aqui no GitHub.
+2. Abra a pasta no seu computador.
+3. Dê dois cliques no arquivo **index.html**. O quiz vai abrir direto no seu navegador de internet!
